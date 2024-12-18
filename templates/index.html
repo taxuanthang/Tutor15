@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Blog Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<header>
+<h1>AI Blog Generator</h1>
+<p>Create engaging blogs with the power of AI and your photos!</p>
+</header>
+<form method="POST" enctype="multipart/form-data">
+<label for="prompt">Your Blog Prompt:</label>
+<textarea id="prompt" name="prompt" placeholder="Describe the blog you want..." required></textarea>
+<label for="image">Upload an Image:</label>
+<input type="file" id="image" name="image" accept="image/*" required>
+ 
+            <button type="submit" class="btn">Generate Blog</button>
+</form>
+</div>
+</body>
+</html>

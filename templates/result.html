@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generated Blog</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Your Generated Blog Post</h1>
+<a href="{{ url_for('home') }}" class="btn btn-back">Create Another Blog</a>
+</header>
+<div class="blog">
+<img src="{{ image_path }}" alt="Uploaded Image">
+<div class="blog-content">
+<p>{{ content }}</p>
+</div>
+</div>
+</div>
+</body>
+</html>
